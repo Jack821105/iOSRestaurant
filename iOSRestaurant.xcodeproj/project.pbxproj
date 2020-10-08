@@ -15,6 +15,10 @@
 		FA0B4E5C252862700084E798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0B4E5A252862700084E798 /* LaunchScreen.storyboard */; };
 		FA0B4E67252862700084E798 /* iOSRestaurantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4E66252862700084E798 /* iOSRestaurantTests.swift */; };
 		FA0B4E72252862700084E798 /* iOSRestaurantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4E71252862700084E798 /* iOSRestaurantUITests.swift */; };
+		FA0B4E89252862AA0084E798 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4E88252862AA0084E798 /* Restaurant.swift */; };
+		FA0B4E9A252864400084E798 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4E99252864400084E798 /* Network.swift */; };
+		FAB72D5F252DFA8800AAE56D /* LikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB72D5E252DFA8800AAE56D /* LikeTableViewCell.swift */; };
+		FAB72D64252DFAA300AAE56D /* LikeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB72D63252DFAA300AAE56D /* LikeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		FA0B4E6D252862700084E798 /* iOSRestaurantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSRestaurantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0B4E71252862700084E798 /* iOSRestaurantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSRestaurantUITests.swift; sourceTree = "<group>"; };
 		FA0B4E73252862700084E798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0B4E88252862AA0084E798 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		FA0B4E99252864400084E798 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FAB72D5E252DFA8800AAE56D /* LikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTableViewCell.swift; sourceTree = "<group>"; };
+		FAB72D63252DFAA300AAE56D /* LikeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,9 @@
 		FA0B4E4E2528626F0084E798 /* iOSRestaurant */ = {
 			isa = PBXGroup;
 			children = (
-				FA0B4E4F2528626F0084E798 /* AppDelegate.swift */,
-				FA0B4E512528626F0084E798 /* SceneDelegate.swift */,
-				FA0B4E532528626F0084E798 /* ViewController.swift */,
-				FA0B4E552528626F0084E798 /* Main.storyboard */,
+				FA0B4E87252862930084E798 /* Model */,
+				FA0B4E83252862870084E798 /* Controller */,
+				FA0B4E82252862770084E798 /* View */,
 				FA0B4E58252862700084E798 /* Assets.xcassets */,
 				FA0B4E5A252862700084E798 /* LaunchScreen.storyboard */,
 				FA0B4E5D252862700084E798 /* Info.plist */,
@@ -126,6 +133,75 @@
 				FA0B4E73252862700084E798 /* Info.plist */,
 			);
 			path = iOSRestaurantUITests;
+			sourceTree = "<group>";
+		};
+		FA0B4E82252862770084E798 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B4E552528626F0084E798 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA0B4E83252862870084E798 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAB72D58252DD65A00AAE56D /* Like */,
+				FAB72D5A252DD67300AAE56D /* Other */,
+				FA0B4E952528641F0084E798 /* MapView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA0B4E87252862930084E798 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B4E91252863C40084E798 /* Network */,
+				FA0B4E8D252863900084E798 /* Bean */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA0B4E8D252863900084E798 /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B4E88252862AA0084E798 /* Restaurant.swift */,
+			);
+			name = Bean;
+			sourceTree = "<group>";
+		};
+		FA0B4E91252863C40084E798 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B4E99252864400084E798 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FA0B4E952528641F0084E798 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B4E532528626F0084E798 /* ViewController.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		FAB72D58252DD65A00AAE56D /* Like */ = {
+			isa = PBXGroup;
+			children = (
+				FAB72D5E252DFA8800AAE56D /* LikeTableViewCell.swift */,
+				FAB72D63252DFAA300AAE56D /* LikeTableViewController.swift */,
+			);
+			name = Like;
+			sourceTree = "<group>";
+		};
+		FAB72D5A252DD67300AAE56D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B4E4F2528626F0084E798 /* AppDelegate.swift */,
+				FA0B4E512528626F0084E798 /* SceneDelegate.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB72D5F252DFA8800AAE56D /* LikeTableViewCell.swift in Sources */,
+				FA0B4E9A252864400084E798 /* Network.swift in Sources */,
+				FA0B4E89252862AA0084E798 /* Restaurant.swift in Sources */,
 				FA0B4E542528626F0084E798 /* ViewController.swift in Sources */,
 				FA0B4E502528626F0084E798 /* AppDelegate.swift in Sources */,
 				FA0B4E522528626F0084E798 /* SceneDelegate.swift in Sources */,
+				FAB72D64252DFAA300AAE56D /* LikeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
