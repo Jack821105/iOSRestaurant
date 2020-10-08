@@ -8,7 +8,7 @@
 import Foundation
 
 struct Restaurant:Codable {
-    
+    let id:Int
     let name:String
     let brewery_type:String
     let street:String
@@ -20,7 +20,6 @@ struct Restaurant:Codable {
     let website_url:String
     let updated_at:String
     let phone:String
-    
     
 }
 
