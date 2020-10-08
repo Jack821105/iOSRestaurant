@@ -46,7 +46,6 @@ class ViewController: UIViewController ,MKMapViewDelegate,CLLocationManagerDeleg
                             longitude:  CLLocationDegrees(String(self.restaurant!.longitude))!).coordinate
                         annotation.title = self.restaurant?.name
                         annotation.subtitle = self.restaurant?.brewery_type
-//                        annotation
                         self.lbName.text = self.restaurant!.name
                         self.lbBreweryType.text = self.restaurant!.brewery_type
                         self.myMap.addAnnotation(annotation)
